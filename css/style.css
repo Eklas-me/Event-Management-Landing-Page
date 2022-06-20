@@ -1,0 +1,496 @@
+/* font-family: 'Pacifico', cursive;
+font-family: 'Roboto', sans-serif;
+font-family: 'Rubik', sans-serif; */
+body {
+  font-family: 'Roboto', sans-serif;
+}
+
+img {
+  max-width: 100%;
+}
+
+.container {
+  max-width: 1185px;
+}
+
+.logo h2 {
+  padding-top: 15px;
+  font-family: 'Pacifico', cursive;
+}
+
+.logo h2 span {
+  color: rgb(255 68 43);
+}
+
+.menu ul {
+  padding-left: 0;
+}
+
+.menu ul li {
+  list-style: none;
+  display: inline-block;
+}
+
+.menu ul li a {
+  color: rgb(9 31 60);
+  text-decoration: none;
+  padding: 10px 15px;
+  display: block;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 500;
+  font-size: 17px;
+}
+
+.button a {
+  text-decoration: none;
+  color: rgb(255 255 255);
+  background: rgb(255 68 43);
+  padding: 13px 0;
+  display: block;
+  /* text-align: center; */
+  font-size: 17px;
+  font-weight: 500;
+  border-radius: 50px;
+  position: relative;
+  padding-left: 17px;
+  transition: .5s;
+}
+
+.button a:hover {
+  background: rgb(23 23 24);
+  color: rgb(255 255 255);
+}
+
+.button a::after {
+  content: "\f061";
+  font-family: 'FontAwesome';
+  position: absolute;
+  top: 6px;
+  right: 6px;
+  background: rgb(23 23 24);
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  line-height: 40px;
+  text-align: center;
+  transition: .5s;
+}
+
+.button a:hover::after {
+  background: rgb(255 68 43);
+  color: rgb(255 255 255);
+}
+
+.button {
+  padding-top: 10px;
+  width: 160px;
+  cursor: pointer;
+}
+
+.menu {
+  padding-top: 15px;
+}
+
+
+/* Slider Section Start */
+.slider {
+  background: rgb(23, 23, 24);
+  background: linear-gradient(90deg, rgba(23, 23, 24, 1) 50%, rgba(255, 68, 43, 1) 50%);
+}
+
+.slider-content {
+  padding: 110px 0;
+}
+
+.slider-content h5 {
+  font-size: 25px;
+  color: rgb(255 68 43);
+  text-transform: capitalize;
+  font-family: 'Pacifico', cursive;
+  font-weight: 600;
+}
+
+.slider-content h1 {
+  font-size: 65px;
+  font-weight: 600;
+  margin: 20px 0;
+  line-height: 1.2;
+  font-family: 'Rubik', sans-serif;
+}
+
+.slider-content p {
+  line-height: 30px;
+  font-weight: 400;
+  margin-bottom: 20px;
+}
+
+.slider-btn a:hover {
+  color: rgb(23 23 24);
+  background: rgb(255 255 255);
+}
+
+.slider-image {
+  padding-top: 87px;
+  padding-left: 50px;
+}
+
+/* Slider Section End */
+
+
+/* About Section Start */
+.about-img img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+.about-img::after {
+  content: "";
+  position: absolute;
+  /* width: 100%; */
+  /* height: 100%; */
+  border: 3px solid red;
+  left: -20px;
+  right: -20px;
+  top: 20px;
+  bottom: 20px;
+  border-radius: 10px;
+  z-index: -1;
+}
+
+.about-img {
+  position: relative;
+}
+
+.about-right {
+  padding-left: 30px;
+  position: relative;
+  margin-top: 30px;
+}
+
+.site-heading {
+  position: relative;
+  margin-bottom: 24px;
+}
+
+.site-heading h5 {
+  letter-spacing: 2px;
+  font-size: 29px;
+  font-family: 'Pacifico', cursive;
+  color: rgb(255 68 43);
+}
+
+.site-heading h2 {
+  font-size: 50px;
+  color: rgb(9 31 60);
+  margin-top: 20px;
+  font-weight: 700;
+  font-family: 'Rubik', sans-serif;
+}
+
+.site-heading span {
+  font-size: 150px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  display: block;
+  color: rgb(34 34 34 / 5%);
+  transform: translate(-50%, -50%);
+  font-family: 'Pacifico', cursive;
+}
+
+.about-list ul li {
+  list-style: none;
+}
+
+.about-list ul {
+  padding-left: 0;
+}
+
+.about-list ul li i {
+  width: 30px;
+  color: rgb(255 68 43);
+}
+
+.button.about-btn {
+  width: 180px;
+}
+
+/* About Section End */
+
+/* Features Section Start */
+.Features {
+  background-color: rgb(245 246 250);
+}
+
+.service {
+  perspective: 1000px;
+}
+
+.service:hover .service-items {
+  transform: rotateY(180deg);
+}
+
+.service-items {
+  background: #fff;
+  padding: 30px;
+  margin-bottom: 25px;
+  box-shadow: 0 0 40px 5px rgb(0 0 0 / 5%);
+  text-align: center;
+  transform-style: preserve-3d;
+  transition: transform 0.6s;
+  position: relative;
+
+}
+
+.flip-card-back {
+  position: absolute;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  background-color: rgb(255 68 43);
+  color: white;
+  transform: rotateY(180deg);
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.serviceFlip-btn {
+  margin: auto;
+  width: 180px;
+}
+
+.button.serviceFlip-btn a {
+  background: #fff;
+  color: rgb(9 31 60);
+  text-align: left;
+}
+
+.button.serviceFlip-btn:hover a {
+  background: rgb(9 31 60);
+  color: #fff;
+}
+
+.button.serviceFlip-btn a::after {
+  background: red;
+  color: #fff;
+}
+
+.service-icon {
+  width: 100%;
+  height: 90px;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 15px;
+}
+
+.service-icon img {
+  width: 90px;
+  height: 90px;
+}
+
+.service-content h4 {
+  margin-top: 15px;
+  margin-bottom: 10px;
+  color: rgb(9 31 60);
+}
+
+.service-content p {
+  font-size: 16px;
+  color: rgb(117 127 149);
+}
+
+.service-btn a {
+  color: rgb(9 31 60);
+  text-decoration: none;
+  font-weight: 500;
+  transition: .5s;
+}
+
+.service-btn a i {
+  margin-left: 8px;
+  font-size: 17px;
+}
+
+.service-btn a:hover {
+  color: rgb(255 68 43);
+}
+
+/* Features Section End */
+
+/* Counter Section Start */
+.counter-box {
+  padding-top: 30px;
+  padding-bottom: 43px;
+}
+.count {
+  background: rgb(255 68 43);
+}
+.counter-icon img {
+  width: 50px;
+}
+
+.counter-icon {
+  background: #000;
+  width: 100px;
+  height: 100px;
+  line-height: 100px;
+  text-align: center;
+  border-radius: 50%;
+  margin: auto;
+  position: relative;
+}
+
+.counter-icon::before {
+  content: "";
+  width: 140px;
+  height: 140px;
+  border: 2px solid #000;
+  position: absolute;
+  left: -20px;
+  top: -20px;
+  border-radius: 50px;
+}
+
+.counter-content {
+  margin-top: 30px;
+}
+
+.counter-content span {
+  font-size: 50px;
+  font-weight: 600;
+  color: #fff;
+  line-height: 1;
+}
+
+.counter-content h5 {
+  margin-top: 10px;
+  font-size: 20px;
+  font-weight: 500;
+  color: #fff;
+  font-family: 'Rubik', sans-serif;
+}
+
+/* Counter Section End */
+
+/* Pricing Section Start */
+.switch-button {
+  background: rgba(255, 255, 255, 0.56);
+  border-radius: 30px;
+  overflow: hidden;
+  width: 240px;
+  text-align: center;
+  font-size: 18px;
+  letter-spacing: 1px;
+  /* color: rgb(255 255 255); */
+  position: relative;
+  padding-right: 120px;
+  position: relative;
+  margin: auto;
+  border: 2px solid rgb(9 31 60);
+}
+.switch-button:before {
+  content: "Yearly";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  width: 120px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 3;
+  pointer-events: none;
+}
+.switch-button-checkbox {
+  cursor: pointer;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  z-index: 2;
+}
+.switch-button-checkbox:checked + .switch-button-label:before {
+  transform: translateX(120px);
+  transition: transform 300ms linear;
+}
+.switch-button-checkbox + .switch-button-label {
+  position: relative;
+  padding: 15px 0;
+  display: block;
+  user-select: none;
+  pointer-events: none;
+}
+.switch-button-checkbox + .switch-button-label:before {
+  content: "";
+  background: rgb(255 68 43);
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  border-radius: 30px;
+  transform: translateX(0);
+  transition: transform 300ms;
+}
+.switch-button-checkbox + .switch-button-label .switch-button-label-span {
+  position: relative;
+}
+
+.pricing_item {
+  background: rgb(245 246 250);
+  margin-bottom: 25px;
+  border-radius: 10px;
+  text-align: center;
+  padding-bottom: 40px;
+}
+
+.pricing-header {
+  border-bottom: 5px solid #fff;
+  padding: 50px 0;
+}
+
+.pricing-header h3 {
+  font-size: 25px;
+  font-family: 'Rubik';
+  font-weight: 600;
+}
+
+.pricing-header p {
+  font-size: 45px;
+  font-weight: 600;
+  color: rgb(255 68 43);
+}
+.pricing-body ul {
+  padding-left: 0;
+}
+
+.pricing-body ul li {
+  list-style: none;
+  padding: 16px 0;
+  font-size: 18px;
+  color: rgb(117 127 149);
+}
+
+.pricing-body ul li i {
+  width: 40px;
+}
+
+.pricing-body {
+  text-align: left;
+  width: 280px;
+  margin: auto;
+}
+.choosePlan_btn {
+  margin: auto;
+  width: 168px;
+  text-align: left;
+}
+
+.active{
+  display: none;
+}
+/* Pricing Section End */
