@@ -2,7 +2,7 @@
 font-family: 'Roboto', sans-serif;
 font-family: 'Rubik', sans-serif; */
 body {
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
 }
 
 img {
@@ -15,7 +15,7 @@ img {
 
 .logo h2 {
   padding-top: 15px;
-  font-family: 'Pacifico', cursive;
+  font-family: "Pacifico", cursive;
 }
 
 .logo h2 span {
@@ -36,7 +36,7 @@ img {
   text-decoration: none;
   padding: 10px 15px;
   display: block;
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
   font-weight: 500;
   font-size: 17px;
 }
@@ -53,7 +53,7 @@ img {
   border-radius: 50px;
   position: relative;
   padding-left: 17px;
-  transition: .5s;
+  transition: 0.5s;
 }
 
 .button a:hover {
@@ -63,7 +63,7 @@ img {
 
 .button a::after {
   content: "\f061";
-  font-family: 'FontAwesome';
+  font-family: "FontAwesome";
   position: absolute;
   top: 6px;
   right: 6px;
@@ -73,7 +73,7 @@ img {
   height: 40px;
   line-height: 40px;
   text-align: center;
-  transition: .5s;
+  transition: 0.5s;
 }
 
 .button a:hover::after {
@@ -91,11 +91,14 @@ img {
   padding-top: 15px;
 }
 
-
 /* Slider Section Start */
 .slider {
   background: rgb(23, 23, 24);
-  background: linear-gradient(90deg, rgba(23, 23, 24, 1) 50%, rgba(255, 68, 43, 1) 50%);
+  background: linear-gradient(
+    90deg,
+    rgba(23, 23, 24, 1) 50%,
+    rgba(255, 68, 43, 1) 50%
+  );
 }
 
 .slider-content {
@@ -106,7 +109,7 @@ img {
   font-size: 25px;
   color: rgb(255 68 43);
   text-transform: capitalize;
-  font-family: 'Pacifico', cursive;
+  font-family: "Pacifico", cursive;
   font-weight: 600;
 }
 
@@ -115,7 +118,7 @@ img {
   font-weight: 600;
   margin: 20px 0;
   line-height: 1.2;
-  font-family: 'Rubik', sans-serif;
+  font-family: "Rubik", sans-serif;
 }
 
 .slider-content p {
@@ -135,7 +138,6 @@ img {
 }
 
 /* Slider Section End */
-
 
 /* About Section Start */
 .about-img img {
@@ -175,7 +177,7 @@ img {
 .site-heading h5 {
   letter-spacing: 2px;
   font-size: 29px;
-  font-family: 'Pacifico', cursive;
+  font-family: "Pacifico", cursive;
   color: rgb(255 68 43);
 }
 
@@ -184,7 +186,7 @@ img {
   color: rgb(9 31 60);
   margin-top: 20px;
   font-weight: 700;
-  font-family: 'Rubik', sans-serif;
+  font-family: "Rubik", sans-serif;
 }
 
 .site-heading span {
@@ -195,7 +197,7 @@ img {
   display: block;
   color: rgb(34 34 34 / 5%);
   transform: translate(-50%, -50%);
-  font-family: 'Pacifico', cursive;
+  font-family: "Pacifico", cursive;
 }
 
 .about-list ul li {
@@ -239,7 +241,6 @@ img {
   transform-style: preserve-3d;
   transition: transform 0.6s;
   position: relative;
-
 }
 
 .flip-card-back {
@@ -304,7 +305,7 @@ img {
   color: rgb(9 31 60);
   text-decoration: none;
   font-weight: 500;
-  transition: .5s;
+  transition: 0.5s;
 }
 
 .service-btn a i {
@@ -368,7 +369,7 @@ img {
   font-size: 20px;
   font-weight: 500;
   color: #fff;
-  font-family: 'Rubik', sans-serif;
+  font-family: "Rubik", sans-serif;
 }
 
 /* Counter Section End */
@@ -455,7 +456,7 @@ img {
 
 .pricing-header h3 {
   font-size: 25px;
-  font-family: 'Rubik';
+  font-family: "Rubik";
   font-weight: 600;
 }
 
@@ -490,11 +491,10 @@ img {
   text-align: left;
 }
 
-.active{
+.active {
   display: none;
 }
 /* Pricing Section End */
-
 
 /* FAQ Section Start */
 p.faq-text {
@@ -537,13 +537,13 @@ p.faq-text {
   background: 0 0;
 }
 .accordion-button:not(.collapsed) {
-    border-bottom: 1px solid #ff442b;
+  border-bottom: 1px solid #ff442b;
 }
 .accordion-button:focus {
   box-shadow: none;
 }
 .accordion-button:not(.collapsed)::after {
- content: "\f078";
+  content: "\f078";
   font-family: "Font Awesome 5 Free";
   transform: rotate(-180deg);
   color: #ff442b;
@@ -559,3 +559,153 @@ p.faq-text {
   line-height: 1.8;
 }
 /* FAQ Section End */
+
+/* Testimonials Section Start */
+.testi-quote {
+  padding: 33px 33px 24px;
+  background: rgb(255 68 43);
+  border-radius: 10px;
+  box-shadow: 0 3px 24px rgb(0 0 0 / 10%);
+}
+
+.quote-icon {
+  width: 140px;
+  position: absolute;
+  bottom: 120px;
+  right: 15px;
+}
+
+.testi-quote p {
+  color: #fff;
+  line-height: 1.8;
+}
+
+.testimonials-wrapper {
+}
+
+.quote-icon {
+  opacity: 0.2;
+}
+.testi-quote::before {
+  content: "\f0dd";
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  position: absolute;
+  bottom: 73px;
+  font-size: 60px;
+  left: 42px;
+  color: #ff442b;
+}
+.testi-author {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  margin-top: 30px;
+  margin-left: 20px;
+}
+.author-img {
+  margin-right: 20px;
+  width: 80px;
+  padding: 5px;
+  border-radius: 50px;
+  border: 2px dashed #ff442b;
+}
+.author-img img {
+  border-radius: 50%;
+}
+.author-info h4 {
+  font-size: 20px;
+  color: #091f3c;
+  font-family: "Rubik", sans-serif;
+  font-weight: 600;
+}
+.author-info p {
+  color: #ff442b;
+  margin: 0;
+}
+.testi-rateing {
+  color: #ff442b;
+}
+
+.owl-theme .owl-nav.disabled + .owl-dots {
+  margin-top: 40px;
+}
+.owl-theme .owl-dots .owl-dot.active span,
+.owl-theme .owl-dots .owl-dot:hover span {
+  background: rgb(255 68 43);
+}
+/* Testimonials Section End */
+
+/* Contact us section Start*/
+.contact {
+  background: rgb(23, 23, 24);
+  background: linear-gradient(
+    90deg,
+    rgba(23, 23, 24, 1) 50%,
+    rgba(255, 68, 43, 1) 50%
+  );
+  color: #fff;
+}
+.call-now {
+  font-weight: 600;
+  margin-top: 30px;
+  font-family: "Rubik", sans-serif;
+}
+/* .contact-btn a {
+  background: rgb(9 31 60);
+} */
+/* .button.contact-btn a::after {
+  background: rgb(255 68 43);
+} */
+
+.button.contact-btn a:hover {
+  background: #fff;
+  color: #000;
+}
+.contact-header h6 {
+  display: inline-block;
+  font-weight: 600;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+  color: #fff;
+  font-size: 18px;
+}
+.contact-header h2 {
+  color: #fff;
+  font-size: 35px;
+  margin-bottom: 30px;
+  margin-top: 10px;
+  font-weight: 600;
+  font-family: 'Rubik', sans-serif;
+} 
+.form-group {
+  margin-top: 25px;
+}
+
+.form-control{
+  background-color: rgb(255 255 255 / 0%);
+  border: 1px solid #fff;
+}
+.form-control:focus {
+  background-color: rgb(255 255 255 / 0%);
+}
+.button.submit-btn{
+  margin-top: 10px;
+}
+.button.submit-btn a {
+  background: rgb(23 23 24);
+}
+.button.submit-btn a:hover{
+  background: #fff;
+  color: #000;
+}
+.button.submit-btn a::after {
+  background: rgb(255 68 43);
+}
+
+.form-group.form-control::placeholder {
+  color: rgb(21, 0, 255);
+}
+/* Contact us section End */
+
+
