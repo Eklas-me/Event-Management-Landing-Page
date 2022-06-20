@@ -494,3 +494,68 @@ img {
   display: none;
 }
 /* Pricing Section End */
+
+
+/* FAQ Section Start */
+p.faq-text {
+  color: rgb(117 127 149);
+}
+.button.faq-btn {
+  width: 210px;
+}
+
+.accordion-button {
+  background: #fff;
+}
+
+.accordion-item {
+  box-shadow: 0 0 40px 5px rgb(0 0 0 / 5%);
+  border-radius: 8px;
+  border: none;
+  margin-bottom: 30px;
+}
+
+.accordion-header button {
+  color: rgb(9 31 60);
+  font-weight: 700;
+  font-family: rubik;
+  line-height: 1.2;
+  font-size: 20px;
+}
+.accordion-header button span {
+  width: 45px;
+  background: rgb(255 68 43);
+  color: #fff;
+  height: 45px;
+  line-height: 45px;
+  text-align: center;
+  border-radius: 50%;
+  margin-right: 15px;
+}
+.accordion-button:not(.collapsed) {
+  color: #f44336;
+  background: 0 0;
+}
+.accordion-button:not(.collapsed) {
+    border-bottom: 1px solid #ff442b;
+}
+.accordion-button:focus {
+  box-shadow: none;
+}
+.accordion-button:not(.collapsed)::after {
+ content: "\f078";
+  font-family: "Font Awesome 5 Free";
+  transform: rotate(-180deg);
+  color: #ff442b;
+  background-image: none;
+}
+.accordion-button::after {
+  content: "\f078";
+  font-family: "Font Awesome 5 Free";
+  background-image: none;
+}
+.accordion-body {
+  color: rgb(117 127 149);
+  line-height: 1.8;
+}
+/* FAQ Section End */
