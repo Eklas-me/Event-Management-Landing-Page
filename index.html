@@ -15,12 +15,11 @@
   </head>
   <body>
 <!-- Header Section Start -->
-    <header>
+     <!-- <header>
       <div class="container">
         <div class="row">
           <div class="col-md-2">
             <div class="logo">
-              <!-- <img src="" alt=""> -->
              <h2>Tour <span>Intell</span></h2>
             </div>
           </div>
@@ -30,7 +29,13 @@
                 <li><a href="#">Home</a></li>
                 <li><a href="#">About US</a></li>
                 <li><a href="#">Features</a></li>
-                <li><a href="#">Projects</a></li>
+                <li class="drop_down"><a class="arrow" href="#">Projects <i class="fa-solid fa-angle-down"></i></a>
+                  <ul class="dropdown"  >
+                    <li><a  href="#">Project 1</a></li>
+                    <li><a  href="#">Project 2</a></li>
+                    <li><a  href="#">Project 3</a></li>  
+                  </ul>
+                </li>
                 <li><a href="#">Pricing</a></li>
                 <li><a href="#">Testimonials</a></li>
                 <li><a href="#">Contact us</a></li>
@@ -44,7 +49,66 @@
           </div>
         </div>
       </div>
+    </header> -->
+
+
+    <header>
+       
+            <nav class="navbar navbar-expand-lg navbar-light bg-light">
+              <div class="container">
+                <div class="logo">
+                  <h2>Tour <span>Intell</span></h2>
+                 </div>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                  <ul class="navbar-nav m-auto mb-2 mb-lg-2">
+                    <li class="nav-item">
+                      <a class="nav-link active" aria-current="page" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#">About US</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#">Features</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                      <a class="nav-link " href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        Projects <i class="fa-solid fa-angle-down"></i>
+                      </a>
+                      <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <li><a class="dropdown-item" href="#">Project 1</a></li>
+                        <li><a class="dropdown-item" href="#">Project 2</a></li>
+                        <li><a class="dropdown-item" href="#">Project 3</a></li>
+                        <li><a class="dropdown-item" href="#">Project 4</a></li>
+                      </ul>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#">Pricing</a>
+                    </li>                    <li class="nav-item">
+                      <a class="nav-link" href="#">Testimonials</a>
+                    </li>                    <li class="nav-item">
+                      <a class="nav-link" href="#">Contact us</a>
+                    </li>
+                  </ul>
+                  <form class="d-flex">
+                    <div class="button">
+                      <a href="#" >Get Started</a>
+                    </div>
+                  </form>
+                </div>
+              </div>
+            </nav>
+      
+      
+      
     </header>
+
+
 <!-- Header Section End -->
 
 <!-- Slider Section Start -->
@@ -126,7 +190,7 @@
         </div>
         <div class="row">
 
-          <div class="col-md-3 service">
+          <div class="col-md-6 col-lg-3 service">
             <div class="service-items">
               <div class="service-icon">
                 <img src="./img/banner.svg" alt="">
@@ -148,7 +212,7 @@
             </div>
           </div>
           
-          <div class="col-md-3 service">
+          <div class="col-md-6 col-lg-3 service">
             <div class="service-items">
               <div class="service-icon">
                 <img src="./img/poster.svg" alt="">
@@ -169,7 +233,7 @@
             </div>
             </div>
           </div>
-          <div class="col-md-3 service">
+          <div class="col-md-6 col-lg-3 service">
             <div class="service-items">
               <div class="service-icon">
                 <img src="./img/flyer.svg" alt="">
@@ -190,7 +254,7 @@
             </div>
             </div>
           </div>
-          <div class="col-md-3 service">
+          <div class="col-md-6 col-lg-3 service">
             <div class="service-items">
               <div class="service-icon">
                 <img src="./img/business-card.svg" alt="">
@@ -211,7 +275,7 @@
             </div>
             </div>
           </div>
-          <div class="col-md-3 service">
+          <div class="col-md-6 col-lg-3 service">
             <div class="service-items">
               <div class="service-icon">
                 <img src="./img/business-card.svg" alt="">
@@ -232,7 +296,7 @@
             </div>
             </div>
           </div>
-          <div class="col-md-3 service">
+          <div class="col-md-6 col-lg-3 service">
             <div class="service-items">
               <div class="service-icon">
                 <img src="./img/business-card.svg" alt="">
@@ -253,7 +317,7 @@
             </div>
             </div>
           </div>
-          <div class="col-md-3 service">
+          <div class="col-md-6 col-lg-3 service">
             <div class="service-items">
               <div class="service-icon">
                 <img src="./img/business-card.svg" alt="">
@@ -274,7 +338,7 @@
             </div>
             </div>
           </div>
-          <div class="col-md-3 service">
+          <div class="col-md-6 col-lg-3 service">
             <div class="service-items">
               <div class="service-icon">
                 <img src="./img/business-card.svg" alt="">
@@ -697,7 +761,85 @@
   </div>
 </div>
 </div>
-<!-- Contact Us Section End -->
+<!-- Contact Us Section End --> 
+
+
+<!-- Footer Section Start -->
+<footer class="mt-5 pt-5">
+  <div class="container pb-5">
+    <div class="row">
+      <div class="col-md-4">
+        <div class="footer-box">
+          <a class="footer-logo" href="#">Tour <span>Intell</span></a>
+          <p>We are many variations of passages available but the majority have suffered alteration in some form by injected humour words believable.</p>
+          <ul class="footer-contact">
+            <li><a href="#"><i class="fa-solid fa-phone"></i>+2 123 654 7898</a></li>
+            <li><i class="fa-solid fa-location-dot"></i>25/B Milford Road, New York</li>
+            <li><i class="fa-solid fa-envelope"></i>info@example.com</li>
+          </ul>
+        </div>
+      </div>
+      <div class="col-md-2">
+        <div class="footer-box">
+          <h4 class="footer-title">Quick Links</h4>
+          <ul class="footer-list">
+            <li><a href="#"><i class="fa-solid fa-caret-right"></i>About Us</a></li>
+            <li><a href="#"><i class="fa-solid fa-caret-right"></i> FAQ's</a></li>
+            <li><a href="#"><i class="fa-solid fa-caret-right"></i> Terms Of Service</a></li>
+            <li><a href="#"><i class="fa-solid fa-caret-right"></i> Privacy policy</a></li>
+            <li><a href="#"><i class="fa-solid fa-caret-right"></i> Our Services</a></li>
+            <li><a href="#"><i class="fa-solid fa-caret-right"></i> Latest Blog</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="col-md-3">
+        <div class="footer-box">
+          <h4 class="footer-title">Our Services</h4>
+          <ul class="footer-list">
+            <li><a href="#"><i class="fa-solid fa-caret-right"></i> Offset Printing</a></li>
+            <li><a href="#"><i class="fa-solid fa-caret-right"></i> Business Card</a></li>
+            <li><a href="#"><i class="fa-solid fa-caret-right"></i> Design & Branding</a></li>
+            <li><a href="#"><i class="fa-solid fa-caret-right"></i> 3D Design & Printing</a></li>
+            <li><a href="#"><i class="fa-solid fa-caret-right"></i> Mug Printing</a></li>
+            <li><a href="#"><i class="fa-solid fa-caret-right"></i> T-Shirt Printing</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="col-md-3">
+        <h4 class="footer-title">Our Services</h4>
+        <div class="newsletter">
+          <p>Subscribe Our Newsletter To Get Latest Update And News</p>
+          <form action="#">
+            <input type="email" placeholder="Your Email" class="form-control">
+            <button class="footer-btn">
+              <span><i class="fa-solid fa-envelope"></i></span>
+              Subscribe Now
+            </button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="copyright ">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6">
+          <p class="copyright-text"> © Copyright <span class="date">2022</span><a href="#">Tour Intell</a> All Rights Reserved.</p>
+        </div>
+        <div class="col-md-6">
+          <ul class="footer-social">
+            <li><a href="#"><i class="fa-brands fa-facebook-f"></i></a></li>
+            <li><a href="#"><i class="fa-brands fa-twitter"></i></a></li>
+            <li><a href="#"><i class="fa-brands fa-linkedin-in"></i></a></li>
+            <li><a href="#"><i class="fa-brands fa-youtube"></i></a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+<!-- Footer Section End -->
 
 
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
