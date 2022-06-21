@@ -1,6 +1,35 @@
+@media only screen and (max-width: 992px) {
+
+}
+
 @media only screen and (max-width: 576px) {
   .site-heading span {
     font-size: 70px;
   }
+  .slider-content h1 {
+    font-size: 38px;
+  }
+  .slider-image {
+    display: none;
+}
+.about-img {
+  margin: 20px;
+}
+.site-heading h2 {
+  font-size: 42px;
+}
+.button.submit-btn a {
+  background: #f44336;
+  border: none;
+}
+.button.submit-btn a::after {
+  background: rgb(23 23 24);
+}
+ul.footer-social {
+  text-align: left;
+}
+
+
+
 
 }
