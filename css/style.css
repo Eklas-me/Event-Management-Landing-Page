@@ -1,6 +1,3 @@
-/* font-family: 'Pacifico', cursive;
-font-family: 'Roboto', sans-serif;
-font-family: 'Rubik', sans-serif; */
 body {
   font-family: "Roboto", sans-serif;
 }
@@ -23,22 +20,23 @@ img {
   color: rgb(255 68 43);
 }
 
-
-
 .navbar-expand-lg .navbar-nav .nav-link {
   padding-right: 1rem;
   padding-left: 1rem;
   font-size: 17px;
   font-weight: 500;
   color: rgb(9 31 60);
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
 }
 
 .navbar-expand-lg .navbar-nav .nav-link:hover {
   color: rgb(255 68 43);
 }
 
-/* ul.navbar-nav li ul{
+/*
+  Header Dropdown Hover Effect-- If Needed Just Comment Out  this----
+
+  ul.navbar-nav li ul{
   border: none;
   transition: .8s;
   display: block;
@@ -46,15 +44,12 @@ img {
   position: absolute;
   opacity: 0;
   visibility: hidden;
-  
 }
-
 ul.navbar-nav li:hover ul {
   display: block;
   opacity: 1;
   visibility: visible;
   top: 42px;
-
 } */
 
 button.navbar-toggler {
@@ -66,54 +61,12 @@ button.navbar-toggler {
   box-shadow: none;
 }
 
-.menu ul {
-  padding-left: 0;
-}
-
-.menu ul li {
-  list-style: none;
-  display: inline-block;
-  position: relative;
-}
-
-.menu ul li a {
-  color: rgb(9 31 60);
-  text-decoration: none;
-  padding: 10px 15px;
-  display: block;
-  font-family: "Roboto", sans-serif;
-  font-weight: 500;
-  font-size: 17px;
-  transition: .5s;
-  position: relative;
-}
-.menu ul li a:hover{
-  color: rgb(255 68 43);
-}
-.menu ul li ul {
-  width: 137px;
-  position: absolute;
-  top: 130px;
-  background: #fff;
-  opacity: 0;
-  visibility: hidden;
-  transition: .5s;
-}
-.menu ul li:hover ul {
-  top: 50px;
-  opacity: 1;
-  visibility: visible;
-}
-
-
-
 .button a {
   text-decoration: none;
   color: rgb(255 255 255);
   background: rgb(255 68 43);
   padding: 13px 0;
   display: block;
-  /* text-align: center; */
   font-size: 17px;
   font-weight: 500;
   border-radius: 50px;
@@ -202,7 +155,6 @@ button.navbar-toggler {
   padding-top: 87px;
   padding-left: 50px;
 }
-
 /* Slider Section End */
 
 /* About Section Start */
@@ -224,7 +176,6 @@ button.navbar-toggler {
   border-radius: 10px;
   z-index: -1;
 }
-
 .about-img {
   position: relative;
 }
@@ -282,7 +233,6 @@ button.navbar-toggler {
 .button.about-btn {
   width: 180px;
 }
-
 /* About Section End */
 
 /* Features Section Start */
@@ -382,7 +332,6 @@ button.navbar-toggler {
 .service-btn a:hover {
   color: rgb(255 68 43);
 }
-
 /* Features Section End */
 
 /* Counter Section Start */
@@ -437,7 +386,6 @@ button.navbar-toggler {
   color: #fff;
   font-family: "Rubik", sans-serif;
 }
-
 /* Counter Section End */
 
 /* Pricing Section Start */
@@ -449,7 +397,6 @@ button.navbar-toggler {
   text-align: center;
   font-size: 18px;
   letter-spacing: 1px;
-  /* color: rgb(255 255 255); */
   position: relative;
   padding-right: 120px;
   position: relative;
@@ -646,9 +593,6 @@ p.faq-text {
   line-height: 1.8;
 }
 
-.testimonials-wrapper {
-}
-
 .quote-icon {
   opacity: 0.2;
 }
@@ -777,13 +721,16 @@ p.faq-text {
   opacity: 1; /* Firefox */
 }
 
-:-ms-input-placeholder { /* Internet Explorer 10-11 */
- color: red;
+:-ms-input-placeholder {
+  /* Internet Explorer 10-11 */
+  color: red;
 }
 
-::-ms-input-placeholder { /* Microsoft Edge */
- color: red;
+::-ms-input-placeholder {
+  /* Microsoft Edge */
+  color: red;
 }
+
 /* Contact us section End */
 
 /* Footer Start */
@@ -867,11 +814,16 @@ ul.footer-list li {
 ul.footer-list li a {
   color: #fff;
   text-decoration: none;
+  transition: 0.5s ease;
+}
+ul.footer-list li a:hover {
+  margin-left: 10px;
+  color: rgb(241 66 45);
 }
 
 ul.footer-list li a i {
   color: red;
-  width: 30px;
+  width: 20px;
   font-size: 20px;
 }
 .newsletter p {
@@ -890,6 +842,11 @@ button.footer-btn {
   outline: none;
   border: none;
   box-shadow: 0 3px 24px rgb(0 0 0 / 10%);
+  transition: 0.5s ease;
+}
+button.footer-btn:hover {
+  background: #fff;
+  color: rgb(255 68 43);
 }
 p.copyright-text {
   color: #fff;
@@ -950,5 +907,38 @@ h4.footer-title::after {
   bottom: 0;
   left: 21px;
 }
-
 /* Footer End */
+
+/* Scroll To top */
+#scroll_to_top {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 30px;
+  z-index: 99;
+  font-size: 20px;
+  border: none;
+  outline: none;
+  background-color: #ff442b;
+  color: #fff;
+  cursor: pointer;
+  padding: 15px;
+  border-radius: 50px;
+  width: 50px;
+  height: 50px;
+  line-height: 15px;
+  text-align: center;
+  transition: all 0.5s ease-in-out;
+}
+
+#scroll_to_top::before {
+  content: "";
+  position: absolute;
+  border: 3px solid #ff442b;
+  border-radius: 50px;
+  left: -6px;
+  right: -6px;
+  top: -6px;
+  bottom: -6px;
+  z-index: -1;
+}

@@ -1,853 +1,834 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <title>Event Management</title>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" />
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Roboto:wght@400;500;700;900&family=Rubik:wght@400;500;600;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" />
-      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.green.min.css" />
-    <link rel="stylesheet" href="./css/bootstrap.min.css" >
-    <link rel="stylesheet" href="./css/style.css">
-    <link rel="stylesheet" href="./css/Responsiv.css">
-  </head>
-  <body>
-<!-- Header Section Start -->
-     <!-- <header>
+<head>
+  <title>Event Management</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Pacifico&family=Roboto:wght@400;500;700;900&family=Rubik:wght@400;500;600;700&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" />
+  <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.green.min.css" />
+  <link rel="stylesheet" href="./css/bootstrap.min.css">
+  <link rel="stylesheet" href="./css/style.css">
+  <link rel="stylesheet" href="./css/Responsiv.css">
+</head>
+
+<body>
+  <!-- Header Section Start -->
+  <header>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
       <div class="container">
-        <div class="row">
-          <div class="col-md-2">
-            <div class="logo">
-             <h2>Tour <span>Intell</span></h2>
-            </div>
-          </div>
-          <div class="col-md-8">
-            <div class="menu">
-              <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">About US</a></li>
-                <li><a href="#">Features</a></li>
-                <li class="drop_down"><a class="arrow" href="#">Projects <i class="fa-solid fa-angle-down"></i></a>
-                  <ul class="dropdown"  >
-                    <li><a  href="#">Project 1</a></li>
-                    <li><a  href="#">Project 2</a></li>
-                    <li><a  href="#">Project 3</a></li>  
-                  </ul>
-                </li>
-                <li><a href="#">Pricing</a></li>
-                <li><a href="#">Testimonials</a></li>
-                <li><a href="#">Contact us</a></li>
+        <div class="logo">
+          <h2>Tour <span>Intell</span></h2>
+        </div>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span><i class="fa-solid fa-bars-staggered"></i></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav m-auto mb-2 mb-lg-2">
+            <li class="nav-item">
+              <a class="nav-link" href="#home">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#about">About US</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#features">Features</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link " href="#projects" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
+                aria-expanded="false">
+                Projects <i class="fa-solid fa-angle-down"></i>
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <li><a class="dropdown-item" href="#">Project 1</a></li>
+                <li><a class="dropdown-item" href="#">Project 2</a></li>
+                <li><a class="dropdown-item" href="#">Project 3</a></li>
+                <li><a class="dropdown-item" href="#">Project 4</a></li>
               </ul>
-            </div>
-          </div>
-          <div class="col-md-2">
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#pricing">Pricing</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#testimonials">Testimonials</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#contact">Contact us</a>
+            </li>
+          </ul>
+          <form class="d-flex">
             <div class="button">
-              <a href="#" >Get Started</a>
+              <a href="#">Get Started</a>
             </div>
-          </div>
-        </div>
-      </div>
-    </header> -->
-
-
-    <header>
-       
-            <nav class="navbar navbar-expand-lg navbar-light bg-light">
-              <div class="container">
-                <div class="logo">
-                  <h2>Tour <span>Intell</span></h2>
-                 </div>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                  <span><i class="fa-solid fa-bars-staggered"></i></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                  <ul class="navbar-nav m-auto mb-2 mb-lg-2">
-                    <li class="nav-item">
-                      <a class="nav-link active" aria-current="page" href="#">Home</a>
-                    </li>
-                    <li class="nav-item">
-                      <a class="nav-link" href="#">Home</a>
-                    </li>
-                    <li class="nav-item">
-                      <a class="nav-link" href="#">About US</a>
-                    </li>
-                    <li class="nav-item">
-                      <a class="nav-link" href="#">Features</a>
-                    </li>
-                    <li class="nav-item dropdown">
-                      <a class="nav-link " href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                        Projects <i class="fa-solid fa-angle-down"></i>
-                      </a>
-                      <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                        <li><a class="dropdown-item" href="#">Project 1</a></li>
-                        <li><a class="dropdown-item" href="#">Project 2</a></li>
-                        <li><a class="dropdown-item" href="#">Project 3</a></li>
-                        <li><a class="dropdown-item" href="#">Project 4</a></li>
-                      </ul>
-                    </li>
-                    <li class="nav-item">
-                      <a class="nav-link" href="#">Pricing</a>
-                    </li>                    <li class="nav-item">
-                      <a class="nav-link" href="#">Testimonials</a>
-                    </li>                    <li class="nav-item">
-                      <a class="nav-link" href="#">Contact us</a>
-                    </li>
-                  </ul>
-                  <form class="d-flex">
-                    <div class="button">
-                      <a href="#" >Get Started</a>
-                    </div>
-                  </form>
-                </div>
-              </div>
-            </nav>
-      
-      
-      
-    </header>
-
-
-<!-- Header Section End -->
-
-<!-- Slider Section Start -->
-    <div class="slider mb-5">
-      <div class="container">
-        <div class="row">
-          <div class="col-md-6">
-            <div class="slider-content text-white">
-              <h5>Welcome To Tour Intell</h5>
-              <h1>Modern & Digital Printing Solution</h1>
-              <p> There are many variations of passages orem psum available but the majority have
-                suffered alteration in some form by injected humour or randomised words which
-                don't look even slightly believable.</p>
-                <div class="button slider-btn">
-                  <a href="#" >About More</a>
-                </div>
-            </div>
-          </div>
-          <div class="col-md-6">
-            <div class="slider-image">
-              <img src="./img/undraw_time_management_re_tk5w (1).svg" alt="">
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-<!-- Slider Section End -->
-
-<!-- About Section Start -->
-    <div class="about pt-5 mb-5" >
-      <div class="container">
-        <div class="row">
-          <div class="col-md-6">
-            <div class="about-left">
-              <div class="about-img">
-                <img src="./img/01.jpg" alt="About Image">
-              </div>
-            </div>
-          </div>
-          <div class="col-md-6">
-            <div class="about-right">
-              <div class="site-heading">
-                <h5>About Us</h5>
-                <h2>What Is Tour Intell Platform</h2>
-                <span>About</span>
-              </div>
-              <p>Tour intell is designed to give tour managers, road managers a streamlined, centralized way to manage all the moving parts associated with running a professional music tour.
-                Tour Intell lets managers enter all info related to shows, rehearsals, travel, appearances, and bus calls to help coordination, Users are assigned different access roles within the system to control privacy yet allow for flexibility keeping the crew well informed every step of the way.
-                
-                </p>
-                <div class="about-list">
-                  <ul>
-                    <li><i class="fa-regular fa-circle-check"></i>At vero eos et accusamus et iusto odio</li>
-                    <li><i class="fa-regular fa-circle-check"></i>At vero eos et accusamus et iusto odio</li>
-                    <li><i class="fa-regular fa-circle-check"></i>At vero eos et accusamus et iusto odio</li>
-                  </ul>
-                </div>
-                <div class="button about-btn ">
-                  <a href="#" >Discover More</a>
-                </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-<!-- About Section End -->
-
-<!-- Features Section Start -->
-    <div class="Features pt-5 pb-5">
-      <div class="container">
-        <div class="row">
-          <div class="col-md-6 mx-auto">
-            <div class="site-heading text-center pb-5 pt-5">
-              <h5>Features</h5>
-              <h2>Our Best Features</h2>
-              <span>Features</span>
-            </div>
-          </div>
-        </div>
-        <div class="row">
-
-          <div class="col-md-6 col-lg-3 service">
-            <div class="service-items">
-              <div class="service-icon">
-                <img src="./img/banner.svg" alt="">
-              </div>
-              <div class="service-content">
-                <h4>Banner Printing</h4>
-                <p> There are many variations but the majority have suffered.</p>
-                <div class="service-btn">
-                  <a href="#">Read More <i class="fa-solid fa-arrow-right-long"></i></a>
-                </div>
-              </div>
-               <div class="flip-card-back text-center">
-                <h4 class="mt-5">Banner Printing</h4>
-                <p> There are many variations but the majority have suffered.</p>
-                <div class="button serviceFlip-btn ">
-                  <a href="#" >Discover More</a>
-                </div>
-            </div>
-            </div>
-          </div>
-          
-          <div class="col-md-6 col-lg-3 service">
-            <div class="service-items">
-              <div class="service-icon">
-                <img src="./img/poster.svg" alt="">
-              </div>
-              <div class="service-content">
-                <h4>Banner Printing</h4>
-                <p> There are many variations but the majority have suffered.</p>
-                <div class="service-btn">
-                  <a href="#">Read More <i class="fa-solid fa-arrow-right-long"></i></a>
-                </div>
-              </div>
-               <div class="flip-card-back text-center">
-                <h4 class="mt-5">Banner Printing</h4>
-                <p> There are many variations but the majority have suffered.</p>
-                <div class="button serviceFlip-btn ">
-                  <a href="#" >Discover More</a>
-                </div>
-            </div>
-            </div>
-          </div>
-          <div class="col-md-6 col-lg-3 service">
-            <div class="service-items">
-              <div class="service-icon">
-                <img src="./img/flyer.svg" alt="">
-              </div>
-              <div class="service-content">
-                <h4>Banner Printing</h4>
-                <p> There are many variations but the majority have suffered.</p>
-                <div class="service-btn">
-                  <a href="#">Read More <i class="fa-solid fa-arrow-right-long"></i></a>
-                </div>
-              </div>
-               <div class="flip-card-back text-center">
-                <h4 class="mt-5">Banner Printing</h4>
-                <p> There are many variations but the majority have suffered.</p>
-                <div class="button serviceFlip-btn ">
-                  <a href="#" >Discover More</a>
-                </div>
-            </div>
-            </div>
-          </div>
-          <div class="col-md-6 col-lg-3 service">
-            <div class="service-items">
-              <div class="service-icon">
-                <img src="./img/business-card.svg" alt="">
-              </div>
-              <div class="service-content">
-                <h4>Banner Printing</h4>
-                <p> There are many variations but the majority have suffered.</p>
-                <div class="service-btn">
-                  <a href="#">Read More <i class="fa-solid fa-arrow-right-long"></i></a>
-                </div>
-              </div>
-               <div class="flip-card-back text-center">
-                <h4 class="mt-5">Banner Printing</h4>
-                <p> There are many variations but the majority have suffered.</p>
-                <div class="button serviceFlip-btn ">
-                  <a href="#" >Discover More</a>
-                </div>
-            </div>
-            </div>
-          </div>
-          <div class="col-md-6 col-lg-3 service">
-            <div class="service-items">
-              <div class="service-icon">
-                <img src="./img/business-card.svg" alt="">
-              </div>
-              <div class="service-content">
-                <h4>Banner Printing</h4>
-                <p> There are many variations but the majority have suffered.</p>
-                <div class="service-btn">
-                  <a href="#">Read More <i class="fa-solid fa-arrow-right-long"></i></a>
-                </div>
-              </div>
-               <div class="flip-card-back text-center">
-                <h4 class="mt-5">Banner Printing</h4>
-                <p> There are many variations but the majority have suffered.</p>
-                <div class="button serviceFlip-btn ">
-                  <a href="#" >Discover More</a>
-                </div>
-            </div>
-            </div>
-          </div>
-          <div class="col-md-6 col-lg-3 service">
-            <div class="service-items">
-              <div class="service-icon">
-                <img src="./img/business-card.svg" alt="">
-              </div>
-              <div class="service-content">
-                <h4>Banner Printing</h4>
-                <p> There are many variations but the majority have suffered.</p>
-                <div class="service-btn">
-                  <a href="#">Read More <i class="fa-solid fa-arrow-right-long"></i></a>
-                </div>
-              </div>
-               <div class="flip-card-back text-center">
-                <h4 class="mt-5">Banner Printing</h4>
-                <p> There are many variations but the majority have suffered.</p>
-                <div class="button serviceFlip-btn ">
-                  <a href="#" >Discover More</a>
-                </div>
-            </div>
-            </div>
-          </div>
-          <div class="col-md-6 col-lg-3 service">
-            <div class="service-items">
-              <div class="service-icon">
-                <img src="./img/business-card.svg" alt="">
-              </div>
-              <div class="service-content">
-                <h4>Banner Printing</h4>
-                <p> There are many variations but the majority have suffered.</p>
-                <div class="service-btn">
-                  <a href="#">Read More <i class="fa-solid fa-arrow-right-long"></i></a>
-                </div>
-              </div>
-               <div class="flip-card-back text-center">
-                <h4 class="mt-5">Banner Printing</h4>
-                <p> There are many variations but the majority have suffered.</p>
-                <div class="button serviceFlip-btn ">
-                  <a href="#" >Discover More</a>
-                </div>
-            </div>
-            </div>
-          </div>
-          <div class="col-md-6 col-lg-3 service">
-            <div class="service-items">
-              <div class="service-icon">
-                <img src="./img/business-card.svg" alt="">
-              </div>
-              <div class="service-content">
-                <h4>Banner Printing</h4>
-                <p> There are many variations but the majority have suffered.</p>
-                <div class="service-btn">
-                  <a href="#">Read More <i class="fa-solid fa-arrow-right-long"></i></a>
-                </div>
-              </div>
-               <div class="flip-card-back text-center">
-                <h4 class="mt-5">Banner Printing</h4>
-                <p> There are many variations but the majority have suffered.</p>
-                <div class="button serviceFlip-btn ">
-                  <a href="#" >Discover More</a>
-                </div>
-            </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-<!-- Features Section End -->
-
-<!-- Counter Section Start -->
-<div class="count pt-5  mb-5 mt-5">
-  <div class="container">
-    <div class="row">
-      <div class="col-md-3">
-        <div class="counter-box text-center">
-          <div class="counter-icon">
-            <img src="./img/project-done.svg" alt="">
-          </div>
-          <div class="counter-content">
-            <span class="counter">1500</span>
-            <h5>+ Projects Done</h5>
-          </div>
-        </div>
-      </div>
-      <div class="col-md-3">
-        <div class="counter-box text-center">
-          <div class="counter-icon">
-            <img src="./img/smile.svg" alt="">
-          </div>
-          <div class="counter-content">
-            <span class="counter">250</span>
-            <h5>+ Happy Customers</h5>
-          </div>
-        </div>
-      </div>
-      <div class="col-md-3">
-        <div class="counter-box text-center">
-          <div class="counter-icon">
-            <img src="./img/user.svg" alt="">
-          </div>
-          <div class="counter-content">
-            <span class="counter">120</span>
-            <h5>+ Experts Team</h5>
-          </div>
-        </div>
-      </div>
-      <div class="col-md-3">
-        <div class="counter-box text-center">
-          <div class="counter-icon">
-            <img src="./img/experience.svg" alt="">
-          </div>
-          <div class="counter-content">
-            <span class="counter">50</span>
-            <h5>+ Years Of Experience</h5>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
-<!-- Counter Section End -->
-
-<!-- Pricing Section Start -->
-<div class="pricing pb-5">
-  <div class="container">
-    <div class="row">
-      <div class="row">
-        <div class="col-md-6 mx-auto">
-          <div class="site-heading text-center pb-5 pt-5">
-            <h5>Pricing</h5>
-            <h2>Pricing Plan</h2>
-            <span>Pricing</span>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="row">
-      <div class="col-md-6 mx-auto mb-5">
-        <div class="switch-button">
-          <input class="switch-button-checkbox" type="checkbox"></input>
-          <label class="switch-button-label" for=""><span class="switch-button-label-span">Monthly</span></label>
-        </div>
-      </div>
-    </div>
-    <div class="row monthly">
-      <div class="col-md-6">
-        <div class="pricing_item">
-          <div class="pricing-header">
-            <h3>UNLIMITED</h3>
-            <p>$75/Month</p>
-          </div>
-          <div class="pricing-body">
-            <ul>
-              <li><i class="fa-solid fa-check"></i> Preimum Paper</li> 
-              <li><i class="fa-solid fa-check"></i> Rounded & Colored</li> 
-              <li><i class="fa-solid fa-check"></i> Pixel Perfect and Accurate</li> 
-              <li><i class="fa-solid fa-check"></i> Awesome Design Work</li> 
-              <li><i class="fa-solid fa-check"></i> Extra Thick Provided</li> 
-            </ul>
-        </div>
-        <div class="button choosePlan_btn ">
-          <a href="#" >Choose Plan</a>
-        </div>
-      </div>
-    </div>
-      <div class="col-md-6">
-        <div class="pricing_item">
-          <div class="pricing-header">
-            <h3>ENTERPRISE</h3>
-            <p>$95/Month</p>
-          </div>
-          <div class="pricing-body">
-            <ul>
-              <li><i class="fa-solid fa-check"></i> Preimum Paper</li> 
-              <li><i class="fa-solid fa-check"></i> Rounded & Colored</li> 
-              <li><i class="fa-solid fa-check"></i> Pixel Perfect and Accurate</li> 
-              <li><i class="fa-solid fa-check"></i> Awesome Design Work</li> 
-              <li><i class="fa-solid fa-check"></i> Extra Thick Provided</li> 
-            </ul>
-        </div>
-        <div class="button choosePlan_btn ">
-          <a href="#" >Choose Plan</a>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <div class="row yearly active">
-    <div class="col-md-6">
-      <div class="pricing_item">
-        <div class="pricing-header">
-          <h3>UNLIMITED</h3>
-          <p>$55/Yearly</p>
-        </div>
-        <div class="pricing-body">
-          <ul>
-            <li><i class="fa-solid fa-check"></i> Preimum Paper</li> 
-            <li><i class="fa-solid fa-check"></i> Rounded & Colored</li> 
-            <li><i class="fa-solid fa-check"></i> Pixel Perfect and Accurate</li> 
-            <li><i class="fa-solid fa-check"></i> Awesome Design Work</li> 
-            <li><i class="fa-solid fa-check"></i> Extra Thick Provided</li> 
-          </ul>
-      </div>
-      <div class="button choosePlan_btn ">
-        <a href="#" >Choose Plan</a>
-      </div>
-    </div>
-  </div>
-    <div class="col-md-6">
-      <div class="pricing_item">
-        <div class="pricing-header">
-          <h3>ENTERPRISE</h3>
-          <p>$85/Yearly</p>
-        </div>
-        <div class="pricing-body">
-          <ul>
-            <li><i class="fa-solid fa-check"></i> Preimum Paper</li> 
-            <li><i class="fa-solid fa-check"></i> Rounded & Colored</li> 
-            <li><i class="fa-solid fa-check"></i> Pixel Perfect and Accurate</li> 
-            <li><i class="fa-solid fa-check"></i> Awesome Design Work</li> 
-            <li><i class="fa-solid fa-check"></i> Extra Thick Provided</li> 
-          </ul>
-      </div>
-      <div class="button choosePlan_btn ">
-        <a href="#" >Choose Plan</a>
-      </div>
-    </div>
-  </div>
-  </div>
-</div>
-</div>
-<!-- Pricing Section End -->
-
-
-<!-- FAQ Section Start -->
-<div class="faq pt-5 pb-5">
-  <div class="container">
-    <div class="row">
-      <div class="col-md-6">
-        <div class="site-heading   pt-5">
-          <h5>Faq's</h5>
-          <h2>Frequently Asked Questions</h2>
-          <span>Faq</span>
-        </div>
-        <p class="faq-text">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even. </p>
-        <p class="faq-text">It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.</p>
-        <div class="button faq-btn ">
-          <a href="#" >Ask Your Question </a>
-        </div>
-      </div>
-      <div class="col-md-6">
-        <div class="accordion accordion-flush pt-5" id="accordionFlushExample">
-          <div class="accordion-item">
-            <h2 class="accordion-header" id="flush-headingOne">
-              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
-                <span><i class="fa-solid fa-question"></i></span>
-                Do I Need A Business Plan ?
-              </button>
-            </h2>
-            <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
-              <div class="accordion-body">We denounce with righteous indignation and dislike men who are so beguiled and demoralized by the charms of pleasure of the moment, so blinded by desire.</div>
-            </div>
-          </div>
-          <div class="accordion-item">
-            <h2 class="accordion-header" id="flush-headingTwo">
-              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
-                <span><i class="fa-solid fa-question"></i></span>
-                How Long Should A Business Plan Be?
-              </button>
-            </h2>
-            <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
-              <div class="accordion-body">We denounce with righteous indignation and dislike men who are so beguiled and demoralized by the charms of pleasure of the moment, so blinded by desire.</div>
-            </div>
-          </div>
-          <div class="accordion-item">
-            <h2 class="accordion-header" id="flush-headingThree">
-              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
-                <span><i class="fa-solid fa-question"></i></span>
-                What Payment Gateway You Support ?
-              </button>
-            </h2>
-            <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
-              <div class="accordion-body">We denounce with righteous indignation and dislike men who are so beguiled and demoralized by the charms of pleasure of the moment, so blinded by desire.</div>
-            </div>
-          </div>
-        </div>
-      </div>
-</div>
-  </div>
-</div>
-<!-- FAQ Section End -->
-
-<!-- Testimonials Section Start -->
-<div class="testimonials pt-5 pb-5">
-<div class="container">
-  <div class="row">
-    <div class="site-heading text-center ">
-      <h5>Testimonials</h5>
-      <h2>What Client Say's</h2>
-      <span>Testimonials</span>
-    </div>
-  </div>
-  <div class="row mt-5">
-    <div class="owl-carousel owl-theme">
-      <div class="item">
-        <div class="testimonials-wrapper">
-          <div class="testi-quote">
-            <p> There are many variations of passages of Lorem Ipsum available, but the majority have
-              suffered alteration in some form, by injected humour, or randomised words.</p>
-              <div class="quote-icon">
-                <img src="./img/quote.svg" alt="">
-              </div>
-          </div>
-          <div class="testi-author">
-            <div class="author-img">
-              <img src="./img/01 (1).jpg" alt="">
-            </div>
-            <div class="author-info">
-              <h4>Parker Jimenez</h4>
-              <p>Customer</p>
-              <div class="testi-rateing">
-                <span><i class="fa-solid fa-star"></i></span>
-                <span><i class="fa-solid fa-star"></i></span>
-                <span><i class="fa-solid fa-star"></i></span>
-                <span><i class="fa-solid fa-star"></i></span>
-                <span><i class="fa-solid fa-star"></i></span>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="item">
-        <div class="testimonials-wrapper">
-          <div class="testi-quote">
-            <p> There are many variations of passages of Lorem Ipsum available, but the majority have
-              suffered alteration in some form, by injected humour, or randomised words.</p>
-              <div class="quote-icon">
-                <img src="./img/quote.svg" alt="">
-              </div>
-          </div>
-          <div class="testi-author">
-            <div class="author-img">
-              <img src="./img/02.jpg" alt="">
-            </div>
-            <div class="author-info">
-              <h4>Reid E Butt</h4>
-              <p>Customer</p>
-              <div class="testi-rateing">
-                <span><i class="fa-solid fa-star"></i></span>
-                <span><i class="fa-solid fa-star"></i></span>
-                <span><i class="fa-solid fa-star"></i></span>
-                <span><i class="fa-solid fa-star"></i></span>
-                <span><i class="fa-solid fa-star"></i></span>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="item">
-        <div class="testimonials-wrapper">
-          <div class="testi-quote">
-            <p> There are many variations of passages of Lorem Ipsum available, but the majority have
-              suffered alteration in some form, by injected humour, or randomised words.</p>
-              <div class="quote-icon">
-                <img src="./img/quote.svg" alt="">
-              </div>
-          </div>
-          <div class="testi-author">
-            <div class="author-img">
-              <img src="./img/03.jpg" alt="">
-            </div>
-            <div class="author-info">
-              <h4>Sylvia H Green</h4>
-              <p>Customer</p>
-              <div class="testi-rateing">
-                <span><i class="fa-solid fa-star"></i></span>
-                <span><i class="fa-solid fa-star"></i></span>
-                <span><i class="fa-solid fa-star"></i></span>
-                <span><i class="fa-solid fa-star"></i></span>
-                <span><i class="fa-solid fa-star"></i></span>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="item">
-        <div class="testimonials-wrapper">
-          <div class="testi-quote">
-            <p> There are many variations of passages of Lorem Ipsum available, but the majority have
-              suffered alteration in some form, by injected humour, or randomised words.</p>
-              <div class="quote-icon">
-                <img src="./img/quote.svg" alt="">
-              </div>
-          </div>
-          <div class="testi-author">
-            <div class="author-img">
-              <img src="./img/04.jpg" alt="">
-            </div>
-            <div class="author-info">
-              <h4>Sylvia H Green</h4>
-              <p>Customer</p>
-              <div class="testi-rateing">
-                <span><i class="fa-solid fa-star"></i></span>
-                <span><i class="fa-solid fa-star"></i></span>
-                <span><i class="fa-solid fa-star"></i></span>
-                <span><i class="fa-solid fa-star"></i></span>
-                <span><i class="fa-solid fa-star"></i></span>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-  </div>
-  </div>  
-</div>
-</div>
-<!-- Testimonials Section End -->
-
-
-<!-- Contact Us Section Start -->
-<div class="contact pt-5 pb-5">
-<div class="container">
-  <div class="row">
-    <div class="col-md-6">
-      <div class="site-heading   pt-5">
-        <h5 class="text-white" style="font-weight: 400;">Need Any Printing</h5>
-        <h2 class="text-white"> Provide Lot's Of Printing Service</h2>
-        <span>Contact</span>
-      </div>
-      <p class="text-white">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything middle of text. </p>
-      <h3 class="call-now">Call Now: +2 123 654 7898</h3>
-      <div class="button contact-btn ">
-        <a href="#" >Contact Us </a>
-      </div>
-    </div>
-    <div class="col-md-6">
-      <div class="contact-right pt-5">
-        <div class="contact-header">
-          <h6>Request A Quote</h6>
-          <h2>If You Have Any Questions Contact With Us</h2>
-        </div>
-        <form action="#">
-          <div class="row">
-            <div class="col">
-              <input type="text" class="form-control" placeholder="Your Name">
-            </div>
-            <div class="col">
-              <input type="email" class="form-control" placeholder="Email">
-            </div>
-          </div>
-          <div class="form-group">
-            <input type="text" class="form-control"  placeholder="Subject">
-          </div>
-          <div class="form-group">
-            <textarea class="form-control"  rows="4" placeholder="Type Message"></textarea>
-          </div>
-          <div class="button submit-btn ">
-            <a href="#" >Contact Us </a>
-          </div>
-        </form>
-
-      </div>
-    </div>
-  </div>
-</div>
-</div>
-<!-- Contact Us Section End --> 
-
-
-<!-- Footer Section Start -->
-<footer class="mt-5 pt-5">
-  <div class="container pb-5">
-    <div class="row">
-      <div class="col-md-4">
-        <div class="footer-box">
-          <a class="footer-logo" href="#">Tour <span>Intell</span></a>
-          <p>We are many variations of passages available but the majority have suffered alteration in some form by injected humour words believable.</p>
-          <ul class="footer-contact">
-            <li><a href="#"><i class="fa-solid fa-phone"></i>+2 123 654 7898</a></li>
-            <li><i class="fa-solid fa-location-dot"></i>25/B Milford Road, New York</li>
-            <li><i class="fa-solid fa-envelope"></i>info@example.com</li>
-          </ul>
-        </div>
-      </div>
-      <div class="col-md-2">
-        <div class="footer-box">
-          <h4 class="footer-title">Quick Links</h4>
-          <ul class="footer-list">
-            <li><a href="#"><i class="fa-solid fa-caret-right"></i>About Us</a></li>
-            <li><a href="#"><i class="fa-solid fa-caret-right"></i> FAQ's</a></li>
-            <li><a href="#"><i class="fa-solid fa-caret-right"></i> Terms Of Service</a></li>
-            <li><a href="#"><i class="fa-solid fa-caret-right"></i> Privacy policy</a></li>
-            <li><a href="#"><i class="fa-solid fa-caret-right"></i> Our Services</a></li>
-            <li><a href="#"><i class="fa-solid fa-caret-right"></i> Latest Blog</a></li>
-          </ul>
-        </div>
-      </div>
-      <div class="col-md-3">
-        <div class="footer-box">
-          <h4 class="footer-title">Our Services</h4>
-          <ul class="footer-list">
-            <li><a href="#"><i class="fa-solid fa-caret-right"></i> Offset Printing</a></li>
-            <li><a href="#"><i class="fa-solid fa-caret-right"></i> Business Card</a></li>
-            <li><a href="#"><i class="fa-solid fa-caret-right"></i> Design & Branding</a></li>
-            <li><a href="#"><i class="fa-solid fa-caret-right"></i> 3D Design & Printing</a></li>
-            <li><a href="#"><i class="fa-solid fa-caret-right"></i> Mug Printing</a></li>
-            <li><a href="#"><i class="fa-solid fa-caret-right"></i> T-Shirt Printing</a></li>
-          </ul>
-        </div>
-      </div>
-      <div class="col-md-3">
-        <h4 class="footer-title">Our Services</h4>
-        <div class="newsletter">
-          <p>Subscribe Our Newsletter To Get Latest Update And News</p>
-          <form action="#">
-            <input type="email" placeholder="Your Email" class="form-control">
-            <button class="footer-btn">
-              <span><i class="fa-solid fa-envelope"></i></span>
-              Subscribe Now
-            </button>
           </form>
         </div>
       </div>
-    </div>
-  </div>
+    </nav>
+  </header>
+  <!-- Header Section End -->
 
-  <div class="copyright ">
+  <!-- Slider Section Start -->
+  <div class="slider mb-5" id="home">
     <div class="container">
       <div class="row">
-        <div class="col-md-6 align-self-center">
-          <p class="copyright-text"> © Copyright <span class="date">2022</span><a href="#">Tour Intell</a> All Rights Reserved.</p>
+        <div class="col-md-6">
+          <div class="slider-content text-white">
+            <h5>Welcome To Tour Intell</h5>
+            <h1>Modern & Digital Printing Solution</h1>
+            <p> There are many variations of passages orem psum available but the majority have
+              suffered alteration in some form by injected humour or randomised words which
+              don't look even slightly believable.</p>
+            <div class="button slider-btn">
+              <a href="#">About More</a>
+            </div>
+          </div>
         </div>
-        <div class="col-md-6 align-self-center">
-          <ul class="footer-social">
-            <li><a href="#"><i class="fa-brands fa-facebook-f"></i></a></li>
-            <li><a href="#"><i class="fa-brands fa-twitter"></i></a></li>
-            <li><a href="#"><i class="fa-brands fa-linkedin-in"></i></a></li>
-            <li><a href="#"><i class="fa-brands fa-youtube"></i></a></li>
-          </ul>
+        <div class="col-md-6">
+          <div class="slider-image">
+            <img src="./img/undraw_time_management_re_tk5w (1).svg" alt="">
+          </div>
         </div>
       </div>
     </div>
   </div>
-</footer>
-<!-- Footer Section End -->
+  <!-- Slider Section End -->
+
+  <!-- About Section Start -->
+  <div class="about pt-5 mb-5" id="about">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6">
+          <div class="about-left">
+            <div class="about-img">
+              <img src="./img/01.jpg" alt="About Image">
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="about-right">
+            <div class="site-heading">
+              <h5>About Us</h5>
+              <h2>What Is Tour Intell Platform</h2>
+              <span>About</span>
+            </div>
+            <p>Tour intell is designed to give tour managers, road managers a streamlined, centralized way to manage all
+              the moving parts associated with running a professional music tour.
+              Tour Intell lets managers enter all info related to shows, rehearsals, travel, appearances, and bus calls
+              to help coordination, Users are assigned different access roles within the system to control privacy yet
+              allow for flexibility keeping the crew well informed every step of the way.
+
+            </p>
+            <div class="about-list">
+              <ul>
+                <li><i class="fa-regular fa-circle-check"></i>At vero eos et accusamus et iusto odio</li>
+                <li><i class="fa-regular fa-circle-check"></i>At vero eos et accusamus et iusto odio</li>
+                <li><i class="fa-regular fa-circle-check"></i>At vero eos et accusamus et iusto odio</li>
+              </ul>
+            </div>
+            <div class="button about-btn ">
+              <a href="#">Discover More</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- About Section End -->
+
+  <!-- Features Section Start -->
+  <div class="Features pt-5 pb-5" id="features">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6 mx-auto">
+          <div class="site-heading text-center pb-5 pt-5">
+            <h5>Features</h5>
+            <h2>Our Best Features</h2>
+            <span>Features</span>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-6 col-lg-3 service">
+          <div class="service-items">
+            <div class="service-icon">
+              <img src="./img/banner.svg" alt="">
+            </div>
+            <div class="service-content">
+              <h4>Banner Printing</h4>
+              <p> There are many variations but the majority have suffered.</p>
+              <div class="service-btn">
+                <a href="#">Read More <i class="fa-solid fa-arrow-right-long"></i></a>
+              </div>
+            </div>
+            <div class="flip-card-back text-center">
+              <h4 class="mt-5">Banner Printing</h4>
+              <p> There are many variations but the majority have suffered.</p>
+              <div class="button serviceFlip-btn ">
+                <a href="#">Discover More</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-6 col-lg-3 service">
+          <div class="service-items">
+            <div class="service-icon">
+              <img src="./img/poster.svg" alt="">
+            </div>
+            <div class="service-content">
+              <h4>Banner Printing</h4>
+              <p> There are many variations but the majority have suffered.</p>
+              <div class="service-btn">
+                <a href="#">Read More <i class="fa-solid fa-arrow-right-long"></i></a>
+              </div>
+            </div>
+            <div class="flip-card-back text-center">
+              <h4 class="mt-5">Banner Printing</h4>
+              <p> There are many variations but the majority have suffered.</p>
+              <div class="button serviceFlip-btn ">
+                <a href="#">Discover More</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-3 service">
+          <div class="service-items">
+            <div class="service-icon">
+              <img src="./img/flyer.svg" alt="">
+            </div>
+            <div class="service-content">
+              <h4>Banner Printing</h4>
+              <p> There are many variations but the majority have suffered.</p>
+              <div class="service-btn">
+                <a href="#">Read More <i class="fa-solid fa-arrow-right-long"></i></a>
+              </div>
+            </div>
+            <div class="flip-card-back text-center">
+              <h4 class="mt-5">Banner Printing</h4>
+              <p> There are many variations but the majority have suffered.</p>
+              <div class="button serviceFlip-btn ">
+                <a href="#">Discover More</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-3 service">
+          <div class="service-items">
+            <div class="service-icon">
+              <img src="./img/business-card.svg" alt="">
+            </div>
+            <div class="service-content">
+              <h4>Banner Printing</h4>
+              <p> There are many variations but the majority have suffered.</p>
+              <div class="service-btn">
+                <a href="#">Read More <i class="fa-solid fa-arrow-right-long"></i></a>
+              </div>
+            </div>
+            <div class="flip-card-back text-center">
+              <h4 class="mt-5">Banner Printing</h4>
+              <p> There are many variations but the majority have suffered.</p>
+              <div class="button serviceFlip-btn ">
+                <a href="#">Discover More</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-3 service">
+          <div class="service-items">
+            <div class="service-icon">
+              <img src="./img/business-card.svg" alt="">
+            </div>
+            <div class="service-content">
+              <h4>Banner Printing</h4>
+              <p> There are many variations but the majority have suffered.</p>
+              <div class="service-btn">
+                <a href="#">Read More <i class="fa-solid fa-arrow-right-long"></i></a>
+              </div>
+            </div>
+            <div class="flip-card-back text-center">
+              <h4 class="mt-5">Banner Printing</h4>
+              <p> There are many variations but the majority have suffered.</p>
+              <div class="button serviceFlip-btn ">
+                <a href="#">Discover More</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-3 service">
+          <div class="service-items">
+            <div class="service-icon">
+              <img src="./img/business-card.svg" alt="">
+            </div>
+            <div class="service-content">
+              <h4>Banner Printing</h4>
+              <p> There are many variations but the majority have suffered.</p>
+              <div class="service-btn">
+                <a href="#">Read More <i class="fa-solid fa-arrow-right-long"></i></a>
+              </div>
+            </div>
+            <div class="flip-card-back text-center">
+              <h4 class="mt-5">Banner Printing</h4>
+              <p> There are many variations but the majority have suffered.</p>
+              <div class="button serviceFlip-btn ">
+                <a href="#">Discover More</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-3 service">
+          <div class="service-items">
+            <div class="service-icon">
+              <img src="./img/business-card.svg" alt="">
+            </div>
+            <div class="service-content">
+              <h4>Banner Printing</h4>
+              <p> There are many variations but the majority have suffered.</p>
+              <div class="service-btn">
+                <a href="#">Read More <i class="fa-solid fa-arrow-right-long"></i></a>
+              </div>
+            </div>
+            <div class="flip-card-back text-center">
+              <h4 class="mt-5">Banner Printing</h4>
+              <p> There are many variations but the majority have suffered.</p>
+              <div class="button serviceFlip-btn ">
+                <a href="#">Discover More</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-3 service">
+          <div class="service-items">
+            <div class="service-icon">
+              <img src="./img/business-card.svg" alt="">
+            </div>
+            <div class="service-content">
+              <h4>Banner Printing</h4>
+              <p> There are many variations but the majority have suffered.</p>
+              <div class="service-btn">
+                <a href="#">Read More <i class="fa-solid fa-arrow-right-long"></i></a>
+              </div>
+            </div>
+            <div class="flip-card-back text-center">
+              <h4 class="mt-5">Banner Printing</h4>
+              <p> There are many variations but the majority have suffered.</p>
+              <div class="button serviceFlip-btn ">
+                <a href="#">Discover More</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Features Section End -->
+
+  <!-- Counter Section Start -->
+  <div class="count pt-5  mb-5 mt-5" id="projects">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-3">
+          <div class="counter-box text-center">
+            <div class="counter-icon">
+              <img src="./img/project-done.svg" alt="">
+            </div>
+            <div class="counter-content">
+              <span class="counter">1500</span>
+              <h5>+ Projects Done</h5>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3">
+          <div class="counter-box text-center">
+            <div class="counter-icon">
+              <img src="./img/smile.svg" alt="">
+            </div>
+            <div class="counter-content">
+              <span class="counter">250</span>
+              <h5>+ Happy Customers</h5>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3">
+          <div class="counter-box text-center">
+            <div class="counter-icon">
+              <img src="./img/user.svg" alt="">
+            </div>
+            <div class="counter-content">
+              <span class="counter">120</span>
+              <h5>+ Experts Team</h5>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3">
+          <div class="counter-box text-center">
+            <div class="counter-icon">
+              <img src="./img/experience.svg" alt="">
+            </div>
+            <div class="counter-content">
+              <span class="counter">50</span>
+              <h5>+ Years Of Experience</h5>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Counter Section End -->
+
+  <!-- Pricing Section Start -->
+  <div class="pricing pb-5" id="pricing">
+    <div class="container">
+      <div class="row">
+        <div class="row">
+          <div class="col-md-6 mx-auto">
+            <div class="site-heading text-center pb-5 pt-5">
+              <h5>Pricing</h5>
+              <h2>Pricing Plan</h2>
+              <span>Pricing</span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-6 mx-auto mb-5">
+          <div class="switch-button">
+            <input class="switch-button-checkbox" type="checkbox"></input>
+            <label class="switch-button-label" for=""><span class="switch-button-label-span">Monthly</span></label>
+          </div>
+        </div>
+      </div>
+      <div class="row monthly">
+        <div class="col-md-6">
+          <div class="pricing_item">
+            <div class="pricing-header">
+              <h3>UNLIMITED</h3>
+              <p>$75/Month</p>
+            </div>
+            <div class="pricing-body">
+              <ul>
+                <li><i class="fa-solid fa-check"></i> Preimum Paper</li>
+                <li><i class="fa-solid fa-check"></i> Rounded & Colored</li>
+                <li><i class="fa-solid fa-check"></i> Pixel Perfect and Accurate</li>
+                <li><i class="fa-solid fa-check"></i> Awesome Design Work</li>
+                <li><i class="fa-solid fa-check"></i> Extra Thick Provided</li>
+              </ul>
+            </div>
+            <div class="button choosePlan_btn ">
+              <a href="#">Choose Plan</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="pricing_item">
+            <div class="pricing-header">
+              <h3>ENTERPRISE</h3>
+              <p>$95/Month</p>
+            </div>
+            <div class="pricing-body">
+              <ul>
+                <li><i class="fa-solid fa-check"></i> Preimum Paper</li>
+                <li><i class="fa-solid fa-check"></i> Rounded & Colored</li>
+                <li><i class="fa-solid fa-check"></i> Pixel Perfect and Accurate</li>
+                <li><i class="fa-solid fa-check"></i> Awesome Design Work</li>
+                <li><i class="fa-solid fa-check"></i> Extra Thick Provided</li>
+              </ul>
+            </div>
+            <div class="button choosePlan_btn ">
+              <a href="#">Choose Plan</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="row yearly active">
+        <div class="col-md-6">
+          <div class="pricing_item">
+            <div class="pricing-header">
+              <h3>UNLIMITED</h3>
+              <p>$55/Yearly</p>
+            </div>
+            <div class="pricing-body">
+              <ul>
+                <li><i class="fa-solid fa-check"></i> Preimum Paper</li>
+                <li><i class="fa-solid fa-check"></i> Rounded & Colored</li>
+                <li><i class="fa-solid fa-check"></i> Pixel Perfect and Accurate</li>
+                <li><i class="fa-solid fa-check"></i> Awesome Design Work</li>
+                <li><i class="fa-solid fa-check"></i> Extra Thick Provided</li>
+              </ul>
+            </div>
+            <div class="button choosePlan_btn ">
+              <a href="#">Choose Plan</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="pricing_item">
+            <div class="pricing-header">
+              <h3>ENTERPRISE</h3>
+              <p>$85/Yearly</p>
+            </div>
+            <div class="pricing-body">
+              <ul>
+                <li><i class="fa-solid fa-check"></i> Preimum Paper</li>
+                <li><i class="fa-solid fa-check"></i> Rounded & Colored</li>
+                <li><i class="fa-solid fa-check"></i> Pixel Perfect and Accurate</li>
+                <li><i class="fa-solid fa-check"></i> Awesome Design Work</li>
+                <li><i class="fa-solid fa-check"></i> Extra Thick Provided</li>
+              </ul>
+            </div>
+            <div class="button choosePlan_btn ">
+              <a href="#">Choose Plan</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Pricing Section End -->
 
 
-    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js" ></script>
-    <script src="http://cdnjs.cloudflare.com/ajax/libs/waypoints/2.0.3/waypoints.min.js"></script>
-    <script src="./js/jquery.counterup.min.js"></script>
-    <script src="./js/bootstrap.min.js"></script>
-    <script src="./js/app.js"></script>
-  </body>
+  <!-- FAQ Section Start -->
+  <div class="faq pt-5 pb-5">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6">
+          <div class="site-heading   pt-5">
+            <h5>Faq's</h5>
+            <h2>Frequently Asked Questions</h2>
+            <span>Faq</span>
+          </div>
+          <p class="faq-text">There are many variations of passages of Lorem Ipsum available, but the majority have
+            suffered alteration in some form, by injected humour, or randomised words which don't look even. </p>
+          <p class="faq-text">It is a long established fact that a reader will be distracted by the readable content of
+            a page when looking at its layout.</p>
+          <div class="button faq-btn ">
+            <a href="#">Ask Your Question </a>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="accordion accordion-flush pt-5" id="accordionFlushExample">
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="flush-headingOne">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                  data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                  <span><i class="fa-solid fa-question"></i></span>
+                  Do I Need A Business Plan ?
+                </button>
+              </h2>
+              <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne"
+                data-bs-parent="#accordionFlushExample">
+                <div class="accordion-body">We denounce with righteous indignation and dislike men who are so beguiled
+                  and demoralized by the charms of pleasure of the moment, so blinded by desire.</div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="flush-headingTwo">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                  data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+                  <span><i class="fa-solid fa-question"></i></span>
+                  How Long Should A Business Plan Be?
+                </button>
+              </h2>
+              <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo"
+                data-bs-parent="#accordionFlushExample">
+                <div class="accordion-body">We denounce with righteous indignation and dislike men who are so beguiled
+                  and demoralized by the charms of pleasure of the moment, so blinded by desire.</div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="flush-headingThree">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                  data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+                  <span><i class="fa-solid fa-question"></i></span>
+                  What Payment Gateway You Support ?
+                </button>
+              </h2>
+              <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree"
+                data-bs-parent="#accordionFlushExample">
+                <div class="accordion-body">We denounce with righteous indignation and dislike men who are so beguiled
+                  and demoralized by the charms of pleasure of the moment, so blinded by desire.</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- FAQ Section End -->
+
+  <!-- Testimonials Section Start -->
+  <div class="testimonials pt-5 pb-5" id="testimonials">
+    <div class="container">
+      <div class="row">
+        <div class="site-heading text-center ">
+          <h5>Testimonials</h5>
+          <h2>What Client Say's</h2>
+          <span>Testimonials</span>
+        </div>
+      </div>
+      <div class="row mt-5">
+        <div class="owl-carousel owl-theme">
+          <div class="item">
+            <div class="testimonials-wrapper">
+              <div class="testi-quote">
+                <p> There are many variations of passages of Lorem Ipsum available, but the majority have
+                  suffered alteration in some form, by injected humour, or randomised words.</p>
+                <div class="quote-icon">
+                  <img src="./img/quote.svg" alt="">
+                </div>
+              </div>
+              <div class="testi-author">
+                <div class="author-img">
+                  <img src="./img/01 (1).jpg" alt="">
+                </div>
+                <div class="author-info">
+                  <h4>Parker Jimenez</h4>
+                  <p>Customer</p>
+                  <div class="testi-rateing">
+                    <span><i class="fa-solid fa-star"></i></span>
+                    <span><i class="fa-solid fa-star"></i></span>
+                    <span><i class="fa-solid fa-star"></i></span>
+                    <span><i class="fa-solid fa-star"></i></span>
+                    <span><i class="fa-solid fa-star"></i></span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="item">
+            <div class="testimonials-wrapper">
+              <div class="testi-quote">
+                <p> There are many variations of passages of Lorem Ipsum available, but the majority have
+                  suffered alteration in some form, by injected humour, or randomised words.</p>
+                <div class="quote-icon">
+                  <img src="./img/quote.svg" alt="">
+                </div>
+              </div>
+              <div class="testi-author">
+                <div class="author-img">
+                  <img src="./img/02.jpg" alt="">
+                </div>
+                <div class="author-info">
+                  <h4>Reid E Butt</h4>
+                  <p>Customer</p>
+                  <div class="testi-rateing">
+                    <span><i class="fa-solid fa-star"></i></span>
+                    <span><i class="fa-solid fa-star"></i></span>
+                    <span><i class="fa-solid fa-star"></i></span>
+                    <span><i class="fa-solid fa-star"></i></span>
+                    <span><i class="fa-solid fa-star"></i></span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="item">
+            <div class="testimonials-wrapper">
+              <div class="testi-quote">
+                <p> There are many variations of passages of Lorem Ipsum available, but the majority have
+                  suffered alteration in some form, by injected humour, or randomised words.</p>
+                <div class="quote-icon">
+                  <img src="./img/quote.svg" alt="">
+                </div>
+              </div>
+              <div class="testi-author">
+                <div class="author-img">
+                  <img src="./img/03.jpg" alt="">
+                </div>
+                <div class="author-info">
+                  <h4>Sylvia H Green</h4>
+                  <p>Customer</p>
+                  <div class="testi-rateing">
+                    <span><i class="fa-solid fa-star"></i></span>
+                    <span><i class="fa-solid fa-star"></i></span>
+                    <span><i class="fa-solid fa-star"></i></span>
+                    <span><i class="fa-solid fa-star"></i></span>
+                    <span><i class="fa-solid fa-star"></i></span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="item">
+            <div class="testimonials-wrapper">
+              <div class="testi-quote">
+                <p> There are many variations of passages of Lorem Ipsum available, but the majority have
+                  suffered alteration in some form, by injected humour, or randomised words.</p>
+                <div class="quote-icon">
+                  <img src="./img/quote.svg" alt="">
+                </div>
+              </div>
+              <div class="testi-author">
+                <div class="author-img">
+                  <img src="./img/04.jpg" alt="">
+                </div>
+                <div class="author-info">
+                  <h4>Sylvia H Green</h4>
+                  <p>Customer</p>
+                  <div class="testi-rateing">
+                    <span><i class="fa-solid fa-star"></i></span>
+                    <span><i class="fa-solid fa-star"></i></span>
+                    <span><i class="fa-solid fa-star"></i></span>
+                    <span><i class="fa-solid fa-star"></i></span>
+                    <span><i class="fa-solid fa-star"></i></span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Testimonials Section End -->
+
+
+  <!-- Contact Us Section Start -->
+  <div class="contact pt-5 pb-5" id="contact">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6">
+          <div class="site-heading   pt-5">
+            <h5 class="text-white" style="font-weight: 400;">Need Any Printing</h5>
+            <h2 class="text-white"> Provide Lot's Of Printing Service</h2>
+            <span>Contact</span>
+          </div>
+          <p class="text-white">There are many variations of passages of Lorem Ipsum available, but the majority have
+            suffered alteration in some form, by injected humour, or randomised words which don't look even slightly
+            believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything
+            middle of text. </p>
+          <h3 class="call-now">Call Now: +2 123 654 7898</h3>
+          <div class="button contact-btn ">
+            <a href="#">Contact Us </a>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="contact-right pt-5">
+            <div class="contact-header">
+              <h6>Request A Quote</h6>
+              <h2>If You Have Any Questions Contact With Us</h2>
+            </div>
+            <form action="#">
+              <div class="row">
+                <div class="col">
+                  <input type="text" class="form-control" placeholder="Your Name">
+                </div>
+                <div class="col">
+                  <input type="email" class="form-control" placeholder="Email">
+                </div>
+              </div>
+              <div class="form-group">
+                <input type="text" class="form-control" placeholder="Subject">
+              </div>
+              <div class="form-group">
+                <textarea class="form-control" rows="4" placeholder="Type Message"></textarea>
+              </div>
+              <div class="button submit-btn ">
+                <a href="#">Contact Us </a>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Contact Us Section End -->
+
+
+  <!-- Footer Section Start -->
+  <footer class="mt-5 pt-5">
+    <div class="container pb-5">
+      <div class="row">
+        <div class="col-md-4">
+          <div class="footer-box">
+            <a class="footer-logo" href="#">Tour <span>Intell</span></a>
+            <p>We are many variations of passages available but the majority have suffered alteration in some form by
+              injected humour words believable.</p>
+            <ul class="footer-contact">
+              <li><a href="#"><i class="fa-solid fa-phone"></i>+2 123 654 7898</a></li>
+              <li><i class="fa-solid fa-location-dot"></i>25/B Milford Road, New York</li>
+              <li><i class="fa-solid fa-envelope"></i><a href="#">info@example.com</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-md-2">
+          <div class="footer-box">
+            <h4 class="footer-title">Quick Links</h4>
+            <ul class="footer-list">
+              <li><a href="#"><i class="fa-solid fa-caret-right"></i>About Us</a></li>
+              <li><a href="#"><i class="fa-solid fa-caret-right"></i> FAQ's</a></li>
+              <li><a href="#"><i class="fa-solid fa-caret-right"></i> Terms Of Service</a></li>
+              <li><a href="#"><i class="fa-solid fa-caret-right"></i> Privacy policy</a></li>
+              <li><a href="#"><i class="fa-solid fa-caret-right"></i> Our Services</a></li>
+              <li><a href="#"><i class="fa-solid fa-caret-right"></i> Latest Blog</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-md-3">
+          <div class="footer-box">
+            <h4 class="footer-title">Our Services</h4>
+            <ul class="footer-list">
+              <li><a href="#"><i class="fa-solid fa-caret-right"></i> Offset Printing</a></li>
+              <li><a href="#"><i class="fa-solid fa-caret-right"></i> Business Card</a></li>
+              <li><a href="#"><i class="fa-solid fa-caret-right"></i> Design & Branding</a></li>
+              <li><a href="#"><i class="fa-solid fa-caret-right"></i> 3D Design & Printing</a></li>
+              <li><a href="#"><i class="fa-solid fa-caret-right"></i> Mug Printing</a></li>
+              <li><a href="#"><i class="fa-solid fa-caret-right"></i> T-Shirt Printing</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-md-3">
+          <h4 class="footer-title">Our Services</h4>
+          <div class="newsletter">
+            <p>Subscribe Our Newsletter To Get Latest Update And News</p>
+            <form action="#">
+              <input type="email" placeholder="Your Email" class="form-control">
+              <button class="footer-btn">
+                <span><i class="fa-solid fa-envelope"></i></span>
+                Subscribe Now
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="copyright ">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6 align-self-center">
+            <p class="copyright-text"> © Copyright <span class="date">2022</span><a href="#">Tour Intell</a> All Rights
+              Reserved.</p>
+          </div>
+          <div class="col-md-6 align-self-center">
+            <ul class="footer-social">
+              <li><a href="#"><i class="fa-brands fa-facebook-f"></i></a></li>
+              <li><a href="#"><i class="fa-brands fa-twitter"></i></a></li>
+              <li><a href="#"><i class="fa-brands fa-linkedin-in"></i></a></li>
+              <li><a href="#"><i class="fa-brands fa-youtube"></i></a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <!-- Footer Section End -->
+  <button onclick="topFunction()" id="scroll_to_top" title="Go to top"><i class="fa-solid fa-angles-up"></i></button>
+
+
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+  <script src="http://cdnjs.cloudflare.com/ajax/libs/waypoints/2.0.3/waypoints.min.js"></script>
+  <script src="./js/jquery.counterup.min.js"></script>
+  <script src="./js/bootstrap.min.js"></script>
+  <script src="./js/app.js"></script>
+</body>
+
 </html>
